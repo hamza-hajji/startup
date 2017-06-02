@@ -3968,7 +3968,7 @@ tbody.collapse.in {
       color: #333;
       background-color: transparent; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #555;
+    color: #A39DCD;
     background-color: transparent; }
   .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
     color: #ccc;
@@ -3984,7 +3984,7 @@ tbody.collapse.in {
     border-color: transparent; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: transparent;
-    color: #555; }
+    color: #A39DCD; }
   @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
       color: #777; }
@@ -3992,7 +3992,7 @@ tbody.collapse.in {
         color: #333;
         background-color: transparent; }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-      color: #555;
+      color: #A39DCD;
       background-color: transparent; }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
       color: #ccc;
@@ -5806,15 +5806,18 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+body {
+  position: relative; }
+
 .navbar, .nav-alt {
   border-radius: 0;
   border-bottom: 1px #888 solid;
   padding: 2px 0;
-  font-size: 14px;
+  font-size: .875em;
   font-weight: bold; }
   .navbar .navbar-brand, .nav-alt .navbar-brand {
     font-family: 'Amiko', sans-serif;
-    font-size: 18px;
+    font-size: 1.125em;
     transition: font-size .2s ease-out; }
 
 .nav-alt {
@@ -5834,15 +5837,19 @@ button.close {
 
 .header-text {
   text-align: center;
-  padding: 120px 0;
+  padding: 8em 0;
   position: relative; }
   .header-text .btn-round.btn-primary {
-    margin-top: 250px; }
-
-.header-text h1 {
-  color: #777;
-  font-size: 40px !important;
-  font-weight: bold; }
+    margin-top: 15.6em; }
+  .header-text h1 {
+    color: #777;
+    font-size: 2.5em !important;
+    font-weight: bold; }
+  @media screen and (min-width: 30em) {
+    .header-text h1 {
+      font-size: 1.5em !important; }
+    .header-text .btn-round.btn-primary {
+      margin-top: 8em; } }
 
 #about {
   width: 100%;
@@ -5867,6 +5874,50 @@ button.close {
   #services i.fa {
     display: block;
     color: #A39DCD; }
+
+#showcase {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  font-family: 'Amiko', sans-serif;
+  cursor: pointer; }
+  #showcase div {
+    margin: 0;
+    padding: 0;
+    height: 250px;
+    overflow: hidden; }
+  #showcase img {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  #showcase .overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    background-color: rgba(163, 157, 205, 0.5);
+    color: #fff;
+    transition: opacity .5s; }
+    #showcase .overlay h3 {
+      font-weight: bold;
+      margin-bottom: 8%;
+      font-size: 3em; }
+  #showcase .overlay:hover {
+    opacity: 1;
+    transition: opacity .5s; }
+
+#contact {
+  padding: 60px 0;
+  text-align: center; }
+  #contact p.lead {
+    margin: 3em 0 1em; }
+  #contact .contact {
+    font-size: 18px;
+    margin-top: .2em; }
 
 h2.section-title {
   margin-bottom: 40px; }

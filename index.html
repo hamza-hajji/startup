@@ -7,12 +7,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="bower_components/lightbox2/dist/css/lightbox.min.css">
   <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amiko:700" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <div class="header">
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
@@ -42,7 +44,7 @@
     <div class="header-text">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-md-offset-2">
+          <div class=" col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3">
             <h1>STARTUP IS THE THEME OF CHOICE IF YOU WANT A KILLER BRAND WEBSITE</h1>
             <a href="#about" class="btn btn-primary btn-round">LEARN MORE</a>
           </div>
@@ -92,16 +94,87 @@
   </div>
 
 
-  <div id="showcase">
-    <div class="container">
-      <div class="row">
-        
-      </div>
+  <div id="showcase" class="clearfix">
+    <div class="col-md-4 col-sm-6">
+      <a href="images/image-1-lg.jpg" data-lightbox="showcase">
+        <img src="images/image-1-sm.jpg" alt="Image 1">
+        <div class="overlay">
+          <h3>Project Title</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <a href="images/image-2-lg.jpg" data-lightbox="showcase">
+        <img src="images/image-2-sm.jpg" alt="Image 2">
+        <div class="overlay">
+          <h3>Project Title</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <a href="images/image-3-lg.jpg" data-lightbox="showcase">
+        <img src="images/image-3-sm.jpg" alt="Image 3">
+        <div class="overlay">
+          <h3>Project Title</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <a href="images/image-4-lg.jpg" data-lightbox="showcase">
+        <img src="images/image-4-sm.jpg" alt="Image 4">
+        <div class="overlay">
+          <h3>Project Title</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <a href="images/image-5-lg.jpg" data-lightbox="showcase">
+        <img src="images/image-5-sm.jpg" alt="Image 5">
+        <div class="overlay">
+          <h3>Project Title</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <a href="images/image-6-lg.jpg" data-lightbox="showcase">
+        <img src="images/image-6-sm.jpg" alt="Image 6">
+        <div class="overlay">
+          <h3>Project Title</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+      </a>
+    </div>
     </div>
   </div>
 
+  <div id="contact" class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h2>Keep In Touch!</h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa itaque molestiae quae illum obcaecati, ipsam voluptatibus dolor doloribus, dolorum veritatis.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <i class="fa fa-phone fa-3x"></i>
+            <p class="contact">555-555-5555</p>
+          </div>
+          <div class="col-md-6">
+            <i class="fa fa-envelope fa-3x"></i>
+            <p class="contact">company@private.eu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
   <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/lightbox2/dist/js/lightbox.min.js"></script>
   <script src="js/main.js"></script>
   
 </body>
